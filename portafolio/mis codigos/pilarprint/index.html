@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>App de Productos y Reseñas</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <h1>App de Productos y Reseñas</h1>
+    </header>
+
+    <video width="640" height="360" controls>
+        
+        <source src="./imagenes/video.mp4" type="video/mp4">
+        Tu navegador no soporta la reproducción de videos.
+    </video>
+
+
+    <section id="producto-detalle" style="display: none;">
+        <h2 id="detalle-producto-name"></h2>
+        <img id="detalle-producto-image" src="" alt="" />
+        <p id="detalle-producto-price"></p>
+        <p id="detalle-producto-description"></p>
+        <h3>Reseñas</h3>
+        <div id="detalle-producto-resenas"></div>
+
+         <!-- Sección para agregar reseñas -->
+         <section id="resenas">
+            <h2>Deja tu Reseña</h2>
+            <form id="review-form">
+                <label for="username">Nombre de Usuario</label>
+                <input type="text" id="username" placeholder="Tu nombre" required>
+                <label for="message">Mensaje</label>
+                <textarea id="message" placeholder="Escribe tu reseña" required></textarea>
+                <button type="submit">Enviar Reseña</button>
+            </form>
+        </section>
+        <button onclick="closeProductDetail()">Cerrar</button>
+    </section>
+    <main>
+        <section id="productos">
+            <h2>Lista de Productos</h2>
+            <input type="text" id="search-bar" placeholder="Buscar producto" oninput="searchProducto()">
+            <div id="product-container">
+                <!-- Aquí se insertarán los productos dinámicamente -->
+            </div>
+        </section>
+
+        <!-- Sección para mostrar productos -->
+        <section id="productos">
+            <h2>Lista de Productos</h2>
+            <div id="product-container">
+                <!-- Aquí se insertarán los productos dinámicamente -->
+            </div>
+        </section>
+
+        <section id="producto-detalle" style="display: none;">
+            <h2 id="detalle-producto-name"></h2>
+            <img id="detalle-producto-image" src="" alt="" />
+            <p id="detalle-producto-price"></p>
+            <p id="detalle-producto-description"></p>
+            <h3>Reseñas</h3>
+            <div id="detalle-producto-resenas"></div>
+            <button onclick="closeProductDetail()">Cerrar</button>
+        </section>
+
+       
+    </main>
+    <footer>
+        <p>App desarrollada con Supabase</p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>

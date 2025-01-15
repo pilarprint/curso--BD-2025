@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de Recetas</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+
+<body>
+
+    <script src="script.js"></script>
+
+
+    <header class="paginaEncabezado">
+        <h1>Mis Recetas Favoritas</h1>
+        <nav>
+            <a href="#recetaPrincipal">Receta Destacada</a> |
+            <a href="#otrasRecetas">Otras Recetas</a>
+        </nav>
+    </header>
+    <main>
+        <!-<section id="recetaPrincipal" class="receta">
+
+            <section id="otrasRecetas" class="otrasRecetas">
+                <h2>Otras Recetas Populares</h2>
+                <div class="receta">
+                    <img src="https://via.placeholder.com/150" alt="Ensalada">
+                    <p>Ensalada César</p>
+                </div>
+                <div class="receta">
+                    <img src="https://via.placeholder.com/150" alt="Pizza">
+                    <p>Pizza Margarita</p>
+                </div>
+            </section>
+
+            <h2>Receta Destacada: Pastel de Chocolate</h2>
+            <div style="text-align: center;"> <img src="https://via.placeholder.com/400x200" alt="Pastel de Chocolate">
+            </div>
+
+            <p>¡Un pastel delicioso, fácil de hacer y perfecto para cualquier ocasión!</p>
+            <button onclick="mostrarDetalles()">Ver Detalles</button>
+            <div id="detallesReceta" style="display: none;">
+                <h3>Ingredientes:</h3>
+                <ul>
+                    <li>200g de chocolate</li>
+                    <li>200g de harina</li>
+                    <li>3 huevos</li>
+                    <li>150g de azúcar</li>
+                </ul>
+            </div>
+            </section>
+
+            <section id="formularioRecetas" class="formulario">
+                <h2>Envía Tu Propia Receta</h2>
+                <form action="#" method="post">
+                    <label for="nombreReceta">Nombre de la receta:</label>
+                    <input type="text" id="nombreReceta" name="nombreReceta" required>
+                    <label for="descripcion">Descripción:</label>
+                    <textarea id="descripcion" name="descripcion" rows="4" required></textarea>
+                    <label for="categoria">Categoría:</label>
+                    <select id="categoria" name="categoria">
+                        <option value="postre">Postre</option>
+                        <option value="platoFuerte">Plato Fuerte</option>
+                        <option value="entrada">Entrada</option>
+                    </select>
+                    <button type="submit">Enviar Receta</button>
+                </form>
+            </section>
+            <section id="tablaCalorias" class="tabla">
+                <h2>Información Nutricional</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Receta</th>
+                            <th>Calorías</th>
+                            <th>Tiempo de Preparación</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Pastel de Chocolate</td>
+                            <td>450 kcal</td>
+                            <td>60 min</td>
+                        </tr>
+                        <tr>
+                            <td>Ensalada César</td>
+                            <td>200 kcal</td>
+                            <td>15 min</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+
+            <section id="formularioRecetas" class="formulario">
+                <h2>Envía Tu Propia Receta</h2>
+                <form action="#" method="post">
+                    <label for="nombreReceta">Nombre de la receta:</label>
+                    <input type="text" id="nombreReceta" name="nombreReceta" required>
+                    <label for="descripcion">Descripción:</label>
+                    <textarea id="descripcion" name="descripcion" rows="4" required></textarea>
+                    <label for="categoria">Categoría:</label>
+                    <select id="categoria" name="categoria">
+                        <option value="postre">Postre</option>
+                        <option value="platoFuerte">Plato Fuerte</option>
+                        <option value="entrada">Entrada</option>
+                    </select>
+                    <button type="submit">Enviar Receta</button>
+                </form>
+            </section>
+            <footer class="paginaPie">
+                <p>Hecho con ♥ en tu curso de diseño de base de datos</p>
+                <p>&copy; 2024 Página de Recetas</p>
+            </footer>
+
+    </main>
+
+
+
+
+</body>
+
+</html>
